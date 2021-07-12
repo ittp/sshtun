@@ -1,5 +1,6 @@
 server: 
   - hostname: is.ittps.ru, 
-  - port: 22 
+  - port: 22,
+  - key: ~/.ssh/id_rsa
   
 
