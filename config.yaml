@@ -2,5 +2,16 @@ server:
   - hostname: is.ittps.ru, 
   - port: 22,
   - key: ~/.ssh/id_rsa
-  
 
+tunnel:
+
+  - name: 'strapi'
+      type: R,
+      from: 0.0.0.0:22
+      to: localhost:2222
+  - name: 'strapi'
+      type: L,
+      from: 0.0.0.0:1337
+      to: localhost:1337
+    
+    # from::to
