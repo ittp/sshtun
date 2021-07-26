@@ -1,0 +1,27 @@
+api: 
+  - proto: https,
+  - url: 'iac.ittps.ru'
+  - ip: '1.1.1.1',
+  - port: '',
+  - configs: 
+    allow: 
+      tp.ittps.ru
+      hub.ittps.ru
+      is.ittps.ru
+      data.ittps.ru
+    
+  
+- config:
+  firewall:
+    allow: 
+      from: https://api.iac.ittps.ru/config/allow
+
+- services:
+  name: "ssh"
+  port: 22
+  proto: "tcp"
+  
+    
+sshtunnel:
+  
+  
